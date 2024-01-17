@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#root {
+  background-color: #b6b69e;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  display: flex;
+}
+
+main {
+  background-color: #8f0303;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  height: 80dvh;
+  display: flex;
+}
+
+.listRender {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  display: flex;
+}
+
+.listRender > div {
+  flex-flow: column wrap;
+  width: 100%;
+  display: flex;
+}
+
+.todoHeading {
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.todoItem {
+  border-bottom: 1px solid beige;
+  justify-content: space-between;
+  display: flex;
+}
+
+.todoListInput {
+  margin-bottom: .5rem;
+}
+
+/*# sourceMappingURL=index.5525e4b8.css.map */
