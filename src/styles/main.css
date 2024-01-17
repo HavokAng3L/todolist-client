@@ -62,13 +62,15 @@ main {
   width: 80%;
   align-items: center;
   justify-content: space-between;
+  overflow-y: auto;
+  border: solid beige 1px;
 }
 
 .listRender > div {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  height: 100%;
 }
 
 .todoHeading {
@@ -76,14 +78,54 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0.5rem;
 }
 
 .todoItem {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid beige 1px;
+  align-items: center;
+}
+.todoItem > h3 {
+  margin-left: 1.2575rem;
+}
+
+.todoItem > button {
+  display: block;
+  border: none;
+  background-color: beige;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: all 0.2s
+}
+
+.todoItem>button:hover {
+  background-color: rgb(143, 3, 3);
+  transition: all 0.2s
 }
 
 .todoListInput {
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.todoListInput>form {
+  width: 100%;
+}
+
+.todoListInput > form > input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid beige 1px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.todoListInput > p {
+  padding: 0.5rem;
 }

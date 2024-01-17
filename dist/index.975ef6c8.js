@@ -27177,23 +27177,30 @@ var _todoListRender = require("./components/TodoListRender");
 var _todoListRenderDefault = parcelHelpers.interopDefault(_todoListRender);
 var _todoListInput = require("./components/TodoListInput");
 var _todoListInputDefault = parcelHelpers.interopDefault(_todoListInput);
+var _todoListHeading = require("./components/TodoListHeading");
+var _todoListHeadingDefault = parcelHelpers.interopDefault(_todoListHeading);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoListHeadingDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoListRenderDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 7,
+                lineNumber: 9,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoListInputDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 8,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
@@ -27206,7 +27213,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/TodoListRender":"i59yl","./components/TodoListInput":"5gp3t"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/TodoListRender":"i59yl","./components/TodoListInput":"5gp3t","./components/TodoListHeading":"3qWif"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27415,35 +27422,26 @@ function TodoListRender() {
     });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "listRender",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoListHeadingDefault.default), {
-                listLength: data?.length
-            }, void 0, false, {
-                fileName: "src/components/TodoListRender.jsx",
-                lineNumber: 22,
-                columnNumber: 7
-            }, this),
-            status === "success" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: todoList
-            }, void 0, false, {
-                fileName: "src/components/TodoListRender.jsx",
-                lineNumber: 24,
-                columnNumber: 9
-            }, this) : status === "pending" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "please wait..."
-            }, void 0, false, {
-                fileName: "src/components/TodoListRender.jsx",
-                lineNumber: 26,
-                columnNumber: 9
-            }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "error"
-            }, void 0, false, {
-                fileName: "src/components/TodoListRender.jsx",
-                lineNumber: 28,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
+        children: status === "success" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: todoList
+        }, void 0, false, {
+            fileName: "src/components/TodoListRender.jsx",
+            lineNumber: 23,
+            columnNumber: 9
+        }, this) : status === "pending" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "please wait..."
+        }, void 0, false, {
+            fileName: "src/components/TodoListRender.jsx",
+            lineNumber: 25,
+            columnNumber: 9
+        }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "error"
+        }, void 0, false, {
+            fileName: "src/components/TodoListRender.jsx",
+            lineNumber: 27,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
         fileName: "src/components/TodoListRender.jsx",
         lineNumber: 21,
         columnNumber: 5
@@ -30109,23 +30107,14 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>TodoListHeading);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function TodoListHeading({ listLength }) {
+function TodoListHeading() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
         className: "todoHeading",
-        children: [
-            "TodoList! ",
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                children: listLength
-            }, void 0, false, {
-                fileName: "src/components/TodoListHeading.jsx",
-                lineNumber: 4,
-                columnNumber: 17
-            }, this)
-        ]
-    }, void 0, true, {
+        children: "TodoList!"
+    }, void 0, false, {
         fileName: "src/components/TodoListHeading.jsx",
-        lineNumber: 3,
-        columnNumber: 5
+        lineNumber: 2,
+        columnNumber: 10
     }, this);
 }
 _c = TodoListHeading;

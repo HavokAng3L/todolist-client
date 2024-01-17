@@ -19,7 +19,6 @@ export default function TodoListRender() {
 
   return (
     <div className="listRender">
-      <TodoListHeading listLength={data?.length} />
       {status === "success" ? (
         <div>{todoList}</div>
       ) : status === "pending" ? (

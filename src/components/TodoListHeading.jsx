@@ -1,7 +1,3 @@
-export default function TodoListHeading({ listLength }) {
-  return (
-    <h2 className="todoHeading">
-      TodoList! <span>{listLength}</span>
-    </h2>
-  );
+export default function TodoListHeading() {
+  return <h2 className="todoHeading">TodoList!</h2>;
 }
