@@ -7,7 +7,7 @@ export default function TodoListInput() {
   const [inputStatus, setInputStatus] = useState("Go ahead! Give it a try.");
 
   async function postTodo(todo) {
-    const res = await fetch("http://localhost:3000/api/todo/new", {
+    const res = await fetch("https://todolist-api-mcq1.onrender.com/todo/new", {
       method: "POST",
       headers: {
         "Content-Type": "application/json; charset=UTF-8",

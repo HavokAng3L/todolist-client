@@ -4,7 +4,7 @@ export default function Todo({ id, todo }) {
   const queryClient = useQueryClient();
 
   async function deleteTodo(id) {
-    const res = await fetch(`http://localhost:3000/api/todo/${id}`, {
+    const res = await fetch(`https://todolist-api-mcq1.onrender.com/todo/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json; charset=UTF-8",
